@@ -2,15 +2,15 @@
     <div>
         <table>
             <tr>
-                <th class="spacerCell"></th>
-                <th *ngFor="let type of types" class="{{ type }}Col">{{ type }}</th>
+                <th class="spacerCell">Attackers -></th>
+                <th *ngFor="let type of attackerOrder; index as i" class="{{ type }}Col">{{ type }}{{ i }}</th>
             </tr>
-            <tr *ngFor="let defenderMultipliers of objectMultipliers">
-                <th>{{ defenderMultipliers.type }}</th>
-                <td *ngFor="let multiplier of defenderMultipliers.multipliers">
-                    {{ multiplier }}
-                </td>
-            </tr>
+                <tr *ngFor="let defenderType of defenderOrder; index as i">
+                    <th>{{ defenderType }}</th>
+                    <td *ngFor="let typeMultiplier of arrayMultipliers[i]">
+                        {{ typeMultiplier }}
+                    </td>
+                </tr>
         </table>
     </div>
 </div>
