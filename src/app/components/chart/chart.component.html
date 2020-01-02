@@ -1,0 +1,16 @@
+<div id="layoutComponent">
+    <div>
+        <table>
+            <tr>
+                <th class="spacerCell"></th>
+                <th *ngFor="let type of types" class="{{ type }}Col">{{ type }}</th>
+            </tr>
+            <tr *ngFor="let defenderMultipliers of objectMultipliers">
+                <th>{{ defenderMultipliers.type }}</th>
+                <td *ngFor="let multiplier of defenderMultipliers.multipliers">
+                    {{ multiplier }}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
