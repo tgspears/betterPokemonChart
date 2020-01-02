@@ -1,74 +1,74 @@
 export const objectMultipliers = [
     {
-        "type": "normal",
+        "defenderType": "normal",
         "multipliers": [1,2,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1]
     },
     {
-        "type": "fighting",
+        "defenderType": "fighting",
         "multipliers": [1,1,2,1,1,0.5,0.5,1,1,1,1,1,1,2,1,1,0.5,2]
     },
     {
-        "type": "flying",
+        "defenderType": "flying",
         "multipliers": [1,0.5,1,1,0,2,0.5,1,0.5,1,1,0.5,2,1,2,1,1,1]
     },
     {
-        "type": "poison",
+        "defenderType": "poison",
         "multipliers": [1,0.5,1,0.5,2,1,0.5,1,1,1,1,0.5,1,2,1,1,1,0.5,]
     },
     {
-        "type": "ground",
+        "defenderType": "ground",
         "multipliers": [1,1,1,0.5,1,0.5,1,1,1,1,2,2,0,1,2,1,1,1]
     },
     {
-        "type": "rock",
+        "defenderType": "rock",
         "multipliers": [0.5,2,0.5,0.5,2,1,1,1,2,0.5,2,2,1,1,1,1,1,1]
     },
     {
-        "type": "bug",
+        "defenderType": "bug",
         "multipliers": [1,0.5,2,1,0.5,2,1,1,1,2,1,0.5,1,1,1,1,1,1]
     },
     {
-        "type": "ghost",
+        "defenderType": "ghost",
         "multipliers": [0,0,1,0.5,1,1,0.5,2,1,1,1,1,1,1,1,1,2,1]
     },
     {
-        "type": "steel",
+        "defenderType": "steel",
         "multipliers": [0.5,2,0.5,0,2,0.5,0.5,1,0.5,2,1,0.5,1,0.5,0.5,0.5,1,0.5]
     },
     {
-        "type": "fire",
+        "defenderType": "fire",
         "multipliers": [1,1,1,1,2,2,0.5,1,0.5,0.5,2,0.5,1,1,0.5,1,1,0.5]
     },
     {
-        "type": "water",
+        "defenderType": "water",
         "multipliers": [1,1,1,1,1,1,1,1,0.5,0.5,0.5,2,2,1,0.5,1,1,1] 
     },
     {
-        "type": "grass",
+        "defenderType": "grass",
         "multipliers": [1,1,2,2,0.5,1,2,1,1,2,0.5,0.5,0.5,1,2,1,1,1]
     },
     {
-        "type": "electric",
+        "defenderType": "electric",
         "multipliers": [1,1,0.5,1,2,1,1,1,0.5,1,1,1,0.5,1,1,1,1,1]
     },
     {
-        "type": "psychic",
+        "defenderType": "psychic",
         "multipliers": [1,0.5,1,1,1,1,2,2,1,1,1,1,1,0.5,1,1,2,1]
     },
     {
-        "type": "ice",
+        "defenderType": "ice",
         "multipliers": [1,2,1,1,1,2,1,1,2,2,1,1,1,1,0.5,1,1,1]
     },
     {
-        "type": "dragon",
+        "defenderType": "dragon",
         "multipliers": [1,1,1,1,1,1,1,1,1,0.5,0.5,0.5,0.5,1,2,2,1,2]
     },
     {
-        "type": "dark",
+        "defenderType": "dark",
         "multipliers": [1,2,1,1,1,1,2,0.5,1,1,1,1,1,0,1,1,0.5,2]
     },
     {
-        "type": "fairy",
+        "defenderType": "fairy",
         "multipliers": [1,0.5,1,2,1,1,0.5,1,2,1,1,1,1,1,1,0,0.5,1]
     }
 ]
