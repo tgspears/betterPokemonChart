@@ -1,16 +1,16 @@
 <div id="layoutComponent">
-    <div>
+    <div [ngClass]="{'blue':true, 'yellow':false}">
         <table>
             <tr>
-                <th class="spacerCell">Attackers -></th>
-                <th *ngFor="let type of attackerOrder; index as i" class="{{ type }}Col">{{ type }}{{ i }}</th>
+                <th class="spacerCell"></th>
+                <th *ngFor="let attackerType of attackersList">{{ attackerType }}</th>
             </tr>
-                <tr *ngFor="let defenderType of defenderOrder; index as i">
-                    <th>{{ defenderType }}</th>
-                    <td *ngFor="let typeMultiplier of arrayMultipliers[i]">
-                        {{ typeMultiplier }}
-                    </td>
-                </tr>
+            <tr *ngFor="let defenderType of defendersList">
+                <th>{{ defenderType }}</th>
+                <td *ngFor="let attackerType of attackersList">
+                    {{ searchableBigMultipliers[defenderType][attackerType] }}
+                </td>
+            </tr>
         </table>
     </div>
 </div>

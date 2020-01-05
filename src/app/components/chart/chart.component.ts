@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { bigMultipliers } from '../../../assets/bigMultipliers';
-import { objectMultipliers } from '../../../assets/objectMultipliers';
-import { arrayMultipliers } from '../../../assets/arrayMultipliers';
-import { attackerOrder, defenderOrder } from '../../../assets/typeOrders';
+import { searchableBigMultipliers } from '../../../assets/searchableBigMultipliers';
+import { types } from '../../../assets/types';
 
 @Component({
   selector: 'app-chart',
@@ -12,18 +10,15 @@ import { attackerOrder, defenderOrder } from '../../../assets/typeOrders';
 })
 export class ChartComponent implements OnInit {
 
-    attackerOrder = attackerOrder;
-    defenderOrder = defenderOrder;
-    bigMultipliers = bigMultipliers;
-    objectMultipliers = objectMultipliers;
-    arrayMultipliers = arrayMultipliers;
+    attackersList = types;
+    defendersList = ["flying","normal","fairy","fighting"];
+    searchableBigMultipliers = searchableBigMultipliers;
 
     // For debugging purposes only
     console = console;
 
     constructor() { }
 
-    ngOnInit() {
-    }
+    ngOnInit() { }
 
 }
