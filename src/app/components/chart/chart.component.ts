@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { bigMultipliers } from '../../../assets/bigMultipliers';
-import { objectMultipliers } from '../../../assets/objectMultipliers';
-import { arrayMultipliers } from '../../../assets/arrayMultipliers';
-import { attackerOrder, defenderOrder } from '../../../assets/typeOrders';
+import { searchableBigMultipliers } from '../../../assets/searchableBigMultipliers';
+import { attackerTypes } from '../../../assets/types';
+import { defenderTypes } from '../../../assets/types';
 
 @Component({
   selector: 'app-chart',
@@ -12,18 +11,28 @@ import { attackerOrder, defenderOrder } from '../../../assets/typeOrders';
 })
 export class ChartComponent implements OnInit {
 
-    attackerOrder = attackerOrder;
-    defenderOrder = defenderOrder;
-    bigMultipliers = bigMultipliers;
-    objectMultipliers = objectMultipliers;
-    arrayMultipliers = arrayMultipliers;
+    attackersList = attackerTypes;
+    defendersList = defenderTypes;
+    searchableBigMultipliers = searchableBigMultipliers;
+
+    calculateMultipliers = function(attackerType:string, defenderType1:string, defenderType2?:string){
+        var multiplier1:number,
+            multiplier2:number;
+
+        multiplier1 = searchableBigMultipliers[defenderType1][attackerType];
+
+        if(defenderType2){
+            multiplier2 = searchableBigMultipliers[defenderType2][attackerType];
+        } else { multiplier2 = 100 };
+
+        return ((multiplier1/100)*(multiplier2/100));
+    }
 
     // For debugging purposes only
     console = console;
 
     constructor() { }
 
-    ngOnInit() {
-    }
+    ngOnInit() { }
 
 }

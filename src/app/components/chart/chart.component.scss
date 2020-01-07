@@ -5,15 +5,108 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #2b2b2b;
   text-align: left;
   padding: 8px;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
+.spacerCell {
+    background-color: #ffffff;
+    font-size: 12px;
 }
 
-.spacerCell {
-    font-size: 13px;
+.m-0 {
+    background-color: rgb(180,60,150);
+}
+
+.m-25 {
+    background-color: rgb(110,250,110);
+}
+
+.m-50 {
+    background-color: rgb(70, 140, 70);
+}
+
+.m-100 {
+    background-color: rgb(200,200,200);
+}
+
+.m-200 {
+    background-color: rgb(255,70,80);
+}
+
+.m-400 {
+    background-color: rgb(120,40,50);
+}
+
+.t-normal {
+    background-color: rgb(185,150,100);
+}
+
+.t-fighting {
+    background-color: rgb(255,70,85);
+}
+
+.t-flying {
+    background-color: rgb(135,134,205);
+}
+
+.t-poison {
+    background-color: rgb(190,80,160);
+}
+
+.t-ground {
+    background-color: rgb(240,175,85);
+}
+
+.t-rock {
+    background-color: rgb(170,165,95);
+}
+
+.t-bug {
+    background-color: rgb(140,180,55);
+}
+
+.t-ghost {
+    background-color: rgb(135,100,155);
+}
+
+.t-steel {
+    background-color: rgb(130,185,190);
+}
+
+.t-fire {
+    background-color: rgb(255,100,65);
+}
+
+.t-water {
+    background-color: rgb(0,200,220);
+}
+
+.t-grass {
+    background-color: rgb(90,210,90);
+}
+
+.t-electric {
+    background-color: rgb(255,200,0);
+}
+
+.t-psychic {
+    background-color: rgb(255,65,130);
+}
+
+.t-ice {
+    background-color: rgb(60,225,215);
+}
+
+.t-dragon {
+    background-color: rgb(95,90,175);
+}
+
+.t-dark {
+    background-color: rgb(90,80,80);
+}
+
+.t-fairy {
+    background-color: rgb(255,90,165);
 }
