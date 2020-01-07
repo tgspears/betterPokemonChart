@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { searchableBigMultipliers } from '../../../assets/searchableBigMultipliers';
-import { types } from '../../../assets/types';
+import { attackerTypes } from '../../../assets/types';
+import { defenderTypes } from '../../../assets/types';
 
 @Component({
   selector: 'app-chart',
@@ -10,9 +11,22 @@ import { types } from '../../../assets/types';
 })
 export class ChartComponent implements OnInit {
 
-    attackersList = types;
-    defendersList = ["flying","normal","fairy","fighting"];
+    attackersList = attackerTypes;
+    defendersList = defenderTypes;
     searchableBigMultipliers = searchableBigMultipliers;
+
+    calculateMultipliers = function(attackerType:string, defenderType1:string, defenderType2?:string){
+        var multiplier1:number,
+            multiplier2:number;
+
+        multiplier1 = searchableBigMultipliers[defenderType1][attackerType];
+
+        if(defenderType2){
+            multiplier2 = searchableBigMultipliers[defenderType2][attackerType];
+        } else { multiplier2 = 100 };
+
+        return ((multiplier1/100)*(multiplier2/100));
+    }
 
     // For debugging purposes only
     console = console;

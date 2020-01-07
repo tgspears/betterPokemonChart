@@ -1,4 +1,4 @@
-export const types = [
+export const attackerTypes = [
     "normal",
     "fighting",
     "flying",
@@ -17,4 +17,43 @@ export const types = [
     "dragon",
     "dark",
     "fairy"
+]
+
+export const defenderTypes = [
+    [
+        ["normal"],
+        ["fighting"]
+    ],
+    [
+        ["flying"],
+        ["poison"]
+    ],
+    [
+        ["ground"],
+        ["rock"]
+    ],
+    [
+        ["bug"],
+        ["ghost"]
+    ],
+    [
+        ["steel"],
+        ["fire"]
+    ],
+    [
+        ["water"],
+        ["grass"]
+    ],
+    [
+        ["electric"],
+        ["psychic"]
+    ],
+    [
+        ["ice"],
+        ["dragon"]
+    ],
+    [
+        ["dark"],
+        ["fairy"]
+    ]
 ]
